@@ -1,0 +1,16 @@
+I) ng new <project> : impossible to generate a working project, indicating several version issues in node modules
+Seems like npm and cli versions incompatibility
+
+- have tried: rebooting pc, changing jasmine version in package.json, regenerating project while stopping 
+	WindowsDefender realtime protection
+- trying to run 'npm install -g @angular/cli@latest' throwing a permission error
+
+SOLUTION: 
+-deleting node.js
+-install the node version manager (nvm) for windows from here: https://github.com/coreybutler/nvm-windows/releases
+-install node with nvm: 'nvm install v16.13.1' in admin mode
+-run 'nvm use 16.13.1' to use this version
+-update cli: 'npm install -g @angular/cli@latest' successfull
+
+-run 'ng new <app>' in your project workspace, packages installed successfully
+-to test: in your project folder, run 'ng serve'
