@@ -18,6 +18,7 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'mysql:mysql-connector-java'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'ro.polak:spring-boot-data-fixtures:0.1.0'
 }
 
 test {
