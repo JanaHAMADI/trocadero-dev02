@@ -9,6 +9,6 @@ export class ArticleService {
   constructor(private http: HttpClient) { }
 
   getAllArticles() {
-    return this.http.get('localhost:8080/articles')
+    return this.http.get('http://localhost:8080/articles');
   }
 }
